@@ -6,19 +6,12 @@
       color="amber"
     >
       <v-app-bar-nav-icon @click="drawer = !drawer" />
-      <span class="title ml-3 mr-5">Google&nbsp;<span class="font-weight-light">Keep</span></span>
-      <v-text-field
-        solo-inverted
-        flat
-        hide-details
-        label="Search"
-        prepend-inner-icon="search"
-      />
-
+      <span class="title ml-3 mr-5">Portfolio&nbsp;<span class="font-weight-light">hayato</span></span>
       <v-spacer />
     </v-app-bar>
 
     <v-navigation-drawer
+      disable-resize-watcher
       v-model="drawer"
       app
       clipped

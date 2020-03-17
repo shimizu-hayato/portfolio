@@ -1,34 +1,25 @@
 <template>
-  <div class="bg-dark masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1 headfonts">Portfolio</h1>
-      <h3 class="mb-5 headfonts">Hayato Shimizu</h3>
-    </div>
-  </div>
+  <v-container
+    fluid
+    class="black fill-height white--text"
+  >
+  <v-layout
+    text-center
+    wrap
+  >
+    <v-flex my-auto>
+      <h1 class="display-4">Portfolio</h1>
+      <h3 class="display-2">Hayato Shimizu</h3>
+    </v-flex>
+  </v-layout>
+  </v-container>
 </template>
 
 <script>
 </script>
 
 <style scoped>
-
-.masthead {
-  min-height: 30rem;
-  position: relative;
-  width: 100%;
-  height: auto;
-  /* background: black; */
+* :not(.v-icon) {
+  font-family: "arial black" !important;
 }
-
-.headfonts{
-  color: #fff;
-  font-family: 'arial black';
-}
-
-h1 {
-  font-size: 60px;
-}
-
-
-
 </style>
