@@ -2,13 +2,14 @@
   <v-container
     fluid
     class="black fill-height white--text"
+    pa-0
   >
   <v-layout
     text-center
     wrap
   >
     <v-flex my-auto>
-      <h1 class="display-4">Portfolio</h1>
+      <h1 class="display-4 mb-3" >Portfolio</h1>
       <h3 class="display-2">Hayato Shimizu</h3>
     </v-flex>
   </v-layout>
@@ -18,8 +19,8 @@
 <script>
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 * :not(.v-icon) {
-  font-family: "arial black" !important;
+  font-family: "steeler", sans-serif!important;
 }
 </style>

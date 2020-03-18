@@ -5,6 +5,7 @@ import about from '../views/about.vue'
 import works from '../views/works.vue'
 import contact from '../views/contact.vue'
 
+
 Vue.use(VueRouter)
 
 const routes = [

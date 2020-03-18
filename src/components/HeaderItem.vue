@@ -6,7 +6,7 @@
       color="amber"
     >
       <v-app-bar-nav-icon @click="drawer = !drawer" />
-      <span class="title ml-3 mr-5">Portfolio&nbsp;<span class="font-weight-light">hayato</span></span>
+      <span class="title ml-3 mr-5" style="font-family: arial black !important;">Portfolio</span>
       <v-spacer />
     </v-app-bar>
 
