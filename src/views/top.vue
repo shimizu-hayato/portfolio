@@ -20,7 +20,7 @@
 </script>
 
 <style scoped lang="scss">
-* :not(.v-icon) {
-  font-family: "steeler", sans-serif!important;
+:not(.v-icon) {
+  h1,h3 {font-family: "steeler"!important;}
 }
 </style>

@@ -15,11 +15,11 @@
       v-model="drawer"
       app
       clipped
-      color="grey lighten-4"
+      color="dark lighten-4"
     >
       <v-list
         dense
-        class="grey lighten-4"
+        class="dark lighten-4"
       >
         <template v-for="(item, i) in items">
           <v-row
@@ -49,7 +49,7 @@
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title class="grey--text">
+              <v-list-item-title class="black--text">
                 {{ item.text }}
               </v-list-item-title>
             </v-list-item-content>
@@ -67,7 +67,7 @@ export default {
       source: String,
   },
   data: () => ({
-    drawer: null,
+    drawer: false,
     items: [
       { icon: 'home', text: 'Home', to: '/' },
       { icon: 'perm_identity', text: 'About me', to: '/about' },
