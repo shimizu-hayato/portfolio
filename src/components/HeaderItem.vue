@@ -6,7 +6,7 @@
       color="amber"
     >
       <v-app-bar-nav-icon @click="drawer = !drawer" />
-      <span class="title ml-3 mr-5" style="font-family: arial black !important;">Portfolio</span>
+      <span class="title ml-3 mr-5" style="font-family: arial black !important;">Hayato's Portfolio</span>
       <v-spacer />
     </v-app-bar>
 
@@ -14,12 +14,12 @@
       disable-resize-watcher
       v-model="drawer"
       app
+      dark
       clipped
-      color="dark lighten-4"
+      color="grey darken-3"
     >
       <v-list
         dense
-        class="dark lighten-4"
       >
         <template v-for="(item, i) in items">
           <v-row
@@ -36,7 +36,6 @@
           <v-divider
             v-else-if="item.divider"
             :key="i"
-            dark
             class="my-4"
           />
           <v-list-item
@@ -44,12 +43,13 @@
             :key="i"
             link
             :to="item.to"
+            v-on:click="drawer = false"
           >
             <v-list-item-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title class="black--text">
+              <v-list-item-title class="">
                 {{ item.text }}
               </v-list-item-title>
             </v-list-item-content>

@@ -1,18 +1,16 @@
 <template>
   <v-container
     fluid
-    class="black fill-height white--text"
+    black
+    class="fill-height white--text"
     pa-0
   >
-  <v-layout
-    text-center
-    wrap
-  >
-    <v-flex my-auto>
-      <h1 class="display-4 mb-3" >Portfolio</h1>
-      <h3 class="display-2">Hayato Shimizu</h3>
-    </v-flex>
-  </v-layout>
+  <v-row no-gutters>
+    <v-col>
+      <h1 class="display-4 mb-3 text-center">Portfolio</h1>
+      <h3 class="display-2 text-center">Hayato Shimizu</h3>
+    </v-col>
+  </v-row>
   </v-container>
 </template>
 
@@ -21,6 +19,14 @@
 
 <style scoped lang="scss">
 :not(.v-icon) {
-  h1,h3 {font-family: "steeler"!important;}
+  h1,h3 {
+    font-family: "steeler"!important;
+    text-align: "center" !important;
+    
+  }
+  h1 {
+    font-size: 20vw !important;
+    margin-bottom: 5vw !important;
+  }
 }
 </style>
