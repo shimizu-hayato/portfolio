@@ -2,7 +2,9 @@
   <v-app>
     <HeaderItem></HeaderItem>
     <v-content>
-      <router-view></router-view>
+      <v-container fluid pa-0 :style="style">
+        <router-view></router-view>
+      </v-container>
     </v-content>
   </v-app>
 </template>
@@ -18,7 +20,7 @@ export default {
   },
 
   data: () => ({
-    //
+    style:{ 'height': '100%' }
   }),
 };
 </script>
