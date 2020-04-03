@@ -15,9 +15,10 @@
     message:<br>
     <input type="textarea" name="entry.1279892730" id="entry.1279892730"><br>
     <input type="submit" value="Submit">
+    enctype="text/plain" v-model="valid" target="hidden_iframe"
   -->
   <!--参考 https://github.com/toperkin/staticFormEmails/blob/master/README.md -->
-  <v-form ref="form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSco6MRQOu3cYwG6l2hNWGqiJ7F96GKb8teH-OYsRj9lE8iizQ/formResponse?" id="gform" v-model="valid" target="hidden_iframe">
+  <form  @submit.prevent>
     <v-container >
       <v-row>
         <v-col
@@ -62,18 +63,23 @@
         ></v-textarea>
       </v-col>
       <v-col cols="12">
-      <v-btn type="submit" dark class="mr-4" form="gform" @click="submit">送信</v-btn>
+      <v-btn dark class="mr-4" @click="submit">送信</v-btn>
       <!-- <v-btn dark class="mr-4" form="gform" @click="submit">送信</v-btn> -->
       </v-col>
       </v-row>
     
     </v-container>
-  </v-form>
+  </form>
+  <!--
   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+  -->
   </section>
 </template>
 
 <script>
+import axios from 'axios'
+//import VueAxios from 'vue-axios'
+
 export default {
     name: 'contact',
     data () {
@@ -99,8 +105,23 @@ export default {
     
     methods: {
       submit() {
-        //this.$refs.form
-        alert("送信完了しました")
+      let data = { "entry.938458302": this.name, "entry.1536800308": this.email, "entry.1279892730": this.textarea}
+      console.log(data)
+      const params = new URLSearchParams()
+      params.append('entry.938458302', this.name)
+      params.append('entry.1536800308', this.email)
+      params.append('entry.1279892730', this.textarea)
+      //header = {'Content-Type': 'application/x-www-form-urlencoded'}
+      
+      axios.post('https://docs.google.com/forms/d/e/1FAIpQLSco6MRQOu3cYwG6l2hNWGqiJ7F96GKb8teH-OYsRj9lE8iizQ/formResponse', data)
+      .then(function (response) {
+         //console.log(response);
+         if (response) {console.log("hoge")}
+      })
+      .catch(function (error) {
+         //console.log(error);
+         if (error) {console.log("huga")}
+      });
       }
     }
   }
