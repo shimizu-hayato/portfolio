@@ -2,7 +2,7 @@
 main
   Home
   About
-  Works
+  Work
   Contact
 </template>
 
