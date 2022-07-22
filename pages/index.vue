@@ -1,5 +1,5 @@
 <template lang="pug">
-main
+main(class="scroll-smooth")
   Home
   About
   Work

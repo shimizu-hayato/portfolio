@@ -6,7 +6,7 @@ section#contact(
     div(class="flex flex-col lg:flex-row h-full w-full")
       div(class="basis-full lg:self-center")
         h2(
-          class="inline-block font-display font-bold text-brand lg:text-xl uppercase mb-4"
+          class="text-amber-300 inline-block font-display font-bold text-brand lg:text-xl uppercase mb-4"
         ) Contact
         h3(class="font-display font-bold text-4xl lg:text-5xl mb-8") Got a problem to solve?
         p(
@@ -170,4 +170,52 @@ section#contact(
             span(
               class="absolute text-xs text-alert-red mt-[0.4rem] invisible peer-invalid:visible"
             ) Message is empty.
+          button(
+            type="submit"
+            class="btn btn-btn-outline px-5 py-2 flex items-center"
+          ) Hit me up 
+            svg(
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 inline-block ml-2"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            ) 
+              path(
+                d="M20.563 3.34a1.002 1.002 0 0 0-.989-.079l-17 8a1 1 0 0 0 .026 1.821L8 15.445v6.722l5.836-4.168 4.764 2.084a1 1 0 0 0 1.399-.85l1-15a1.005 1.005 0 0 0-.436-.893zm-2.466 14.34-5.269-2.306L16 9.167l-7.649 4.25-2.932-1.283 13.471-6.34-.793 11.886z"
+              )
 </template>
+
+<script lang="ts">
+/*
+const form = document.getElementById("contact-form") as HTMLFormElement;
+
+if (form != null) form.addEventListener("submit", handleFormSubmit);
+
+function handleFormSubmit(event: SubmitEvent) {
+  if (form != null) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    postFormData(formData).then(() => {
+      form.reset();
+      form.classList.toggle("hidden");
+
+      const contactFormSuccess = document.getElementById(
+        "contact-form-success"
+      );
+      if (contactFormSuccess != null)
+        contactFormSuccess.classList.toggle("hidden");
+    });
+  }
+}
+function postFormData(formData: FormData) {
+  return fetch("/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: formData,
+  });
+}
+*/
+</script>

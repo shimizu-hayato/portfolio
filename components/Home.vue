@@ -6,7 +6,6 @@ section#home.h-screen.w-full.flex.py28.justify-center.items-center.transition-al
     ) Programming <br/> and Analytics <br/> from the Future 
     div(class="flex items-start justify-center")
       a(
-        to="#about"
         href="#about"
         v-smooth-scroll="{ duration: 1000, offset: 0}"
         class="author_log content-center mt-16 btn btn-secondary btn-outline btn-lg"
