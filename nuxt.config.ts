@@ -8,6 +8,7 @@ export default defineNuxtConfig({
       title: process.env.npm_package_name || "",
       htmlAttrs: {
         lang: 'ja',
+        class: 'scroll-smooth',
       },
       meta: [
         { charset: "utf-8" },
