@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   mode: "spa",
   app: {
     head: {
-      title: process.env.npm_package_name || "",
+      title: "hayato studio",
       htmlAttrs: {
         lang: 'ja',
         class: 'scroll-smooth',

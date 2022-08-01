@@ -11,7 +11,7 @@ section#contact(
         h3(class="font-display font-bold text-4xl lg:text-5xl mb-8") Got a problem to solve?
         p(
           class="text-neutrals-50/60 leading-relaxed max-w-prose mb-12"
-        ) Get your space suit ready and tell me your ideas to develop your dream application.
+        ) 開発についてお困りごとがあれば気軽にご相談ください。
       div(class="basis-full lg:self-center mt-10 lg:mt-0 lg:ml-28")
         div(id="contact-form-success" class="hidden")
           h2(class="font-display font-bold text-brand lg:text-xl uppercase mb-4") Successful!
