@@ -41,7 +41,7 @@ section#contact(
             div(class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none")
               svg(
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 opacity-60 m-0"
+                class="w-5 h-5 opacity-60"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               )
