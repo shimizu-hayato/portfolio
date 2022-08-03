@@ -11,7 +11,18 @@ section#contact(
         h3(class="font-display font-bold text-4xl lg:text-5xl mb-8") Got a problem to solve?
         p(
           class="text-neutrals-50/60 leading-relaxed max-w-prose mb-12"
-        ) 開発についてお困りごとがあれば気軽にご相談ください。
+        ) 開発についてお困りごとがあれば気軽にご相談ください。 <br> ※下のフォームは飾りで配置してあるためメールアドレスでの問い合わせをお願いします。
+        span
+          svg(
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 inline mr-1 mb-1"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          )
+            path(
+              d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"
+            )
+          | tokuteacher@gmail.com
       div(class="basis-full lg:self-center mt-10 lg:mt-0 lg:ml-28")
         div(id="contact-form-success" class="hidden")
           h2(class="font-display font-bold text-brand lg:text-xl uppercase mb-4") Successful!
@@ -30,7 +41,7 @@ section#contact(
             div(class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none")
               svg(
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 opacity-60"
+                class="w-5 h-5 opacity-60 m-0"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               )
@@ -184,38 +195,3 @@ section#contact(
                 d="M20.563 3.34a1.002 1.002 0 0 0-.989-.079l-17 8a1 1 0 0 0 .026 1.821L8 15.445v6.722l5.836-4.168 4.764 2.084a1 1 0 0 0 1.399-.85l1-15a1.005 1.005 0 0 0-.436-.893zm-2.466 14.34-5.269-2.306L16 9.167l-7.649 4.25-2.932-1.283 13.471-6.34-.793 11.886z"
               )
 </template>
-
-<script lang="ts">
-/*
-const form = document.getElementById("contact-form") as HTMLFormElement;
-
-if (form != null) form.addEventListener("submit", handleFormSubmit);
-
-function handleFormSubmit(event: SubmitEvent) {
-  if (form != null) {
-    event.preventDefault();
-
-    const formData = new FormData(form);
-    postFormData(formData).then(() => {
-      form.reset();
-      form.classList.toggle("hidden");
-
-      const contactFormSuccess = document.getElementById(
-        "contact-form-success"
-      );
-      if (contactFormSuccess != null)
-        contactFormSuccess.classList.toggle("hidden");
-    });
-  }
-}
-function postFormData(formData: FormData) {
-  return fetch("/", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded"
-    },
-    body: formData,
-  });
-}
-*/
-</script>
