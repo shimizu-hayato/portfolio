@@ -2,7 +2,6 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  mode: "spa",
   loadingIndicator: {
     name: 'rotating-plane',
     color: 'blue',
@@ -28,7 +27,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: 'any'},
       ]
     },
-    baseURL: '/portfolio'
+    baseURL: '/'
   },
   css: [
     "@/assets/css/tailwind.scss",
