@@ -8,7 +8,7 @@ section#work(
         h2(
           class="text-amber-300 inline-block font-display font-bold text-brand lg:text-xl uppercase mb-4"
         ) Work 
-        h3(class="text-white font-display font-bold text-4xl lg:text-5xl mb-8") My Skills
+        h3(class="text-white font-display font-bold text-4xl lg:text-5xl mb-8") My skills
         p(
           class="text-white leading-relaxed max-w-prose mb-12"
         ) 私が現在習得しているスキルは以下の通りです。データアナリティクス、ウェブ、インフラと様々なスキルがあります。

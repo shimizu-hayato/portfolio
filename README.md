@@ -1,42 +1,31 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+# Portfolio
 
 ## Setup
 
-Make sure to install the dependencies:
+はじめに以下のコマンドで必要なパッケージをインストールします。
 
 ```bash
-# yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
 
-Start the development server on http://localhost:3000
+以下のコマンドでブラウザが起動し開発用のサイトを確認できます。
 
 ```bash
-npm run dev
+yarn dev -o
 ```
 
 ## Production
 
-Build the application for production:
+本番用の環境を以下のコマンドでビルドします:
 
 ```bash
-npm run build
+yarn build
 ```
 
-Locally preview production build:
+ビルドしたパッケージからサイトをプレビューします:
 
 ```bash
-npm run preview
+yarn preview
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.

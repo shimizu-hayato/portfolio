@@ -8,6 +8,12 @@ export default defineNuxtConfig({
     color: 'blue',
     background: 'red'
   },
+  loading: {
+    color: 'DodgerBlue',
+    height: '10px',
+    continuous: true,
+    duration: 3000
+  },
   app: {
     head: {
       title: "hayato studio",
