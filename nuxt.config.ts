@@ -1,10 +1,9 @@
-import { defineNuxtConfig } from 'nuxt';
-
-const SITE_URL = "https://shimizu-hayato.github.io/portfolio";
+import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  ssr: true,
+  mode: "spa",
+  ssr: false,
   target: 'static',
   loadingIndicator: {
     name: 'rotating-plane',
@@ -28,10 +27,9 @@ export default defineNuxtConfig({
         { charset: "utf-8" },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: `${SITE_URL}/favicon.ico`, sizes: 'any'},
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: 'any'},
       ]
     },
-    cdnURL: SITE_URL
   },
   css: [
     "@/assets/css/tailwind.scss",
