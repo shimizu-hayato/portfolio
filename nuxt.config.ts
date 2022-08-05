@@ -4,7 +4,7 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   //mode: "spa",
   //ssr: false,
-  //target: 'static',
+  target: 'static',
   loadingIndicator: {
     name: 'rotating-plane',
     color: 'blue',
@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: 'any'},
       ]
     },
-    //baseURL: '/portfolio',
+    baseURL: '/portfolio/',
     cdnURL: '/portfolio/'
   },
   css: [
