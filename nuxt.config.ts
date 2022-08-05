@@ -30,8 +30,6 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: 'any'},
       ]
     },
-    baseURL: '/portfolio/',
-    cdnURL: '/portfolio/'
   },
   css: [
     "@/assets/css/tailwind.scss",
@@ -46,6 +44,9 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  generate: {
+    dir: 'docs'
   },
   modules: [
   ],
